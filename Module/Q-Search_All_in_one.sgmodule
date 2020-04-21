@@ -31,7 +31,7 @@
 # zdm: 什么值得买
 # amz: 亚马逊
 # jd: 京东
-# tb: 淘宝
+# tb: 贴吧
 # tm: 天猫
 
 # ytb: YouTube
@@ -91,6 +91,9 @@
 # tw (Twitter)
 ^https:\/\/duckduckgo.com\/\?q=tw\+([^&]+).+ https://twitter.com/search?q=$1 302
 
+# tb (贴吧)
+^https:\/\/duckduckgo.com\/\?q=tb\+([^&]+).+ http://tieba.baidu.com/f/search/res?ie=utf-8&qw=$1 302
+
 # > 购物
 # zdm: 什么值得买
 ^https:\/\/duckduckgo.com\/\?q=zdm\+([^&]+).+ https://search.m.smzdm.com/?v=b&s=$1 302
@@ -100,9 +103,6 @@
 
 # jd : 京东
 ^https:\/\/duckduckgo.com\/\?q=jd\+([^&]+).+ https://so.m.jd.com/ware/search.action?keyword=$1 302
-
-# tb: 淘宝
-^https:\/\/duckduckgo.com\/\?q=tb\+([^&]+).+ https://s.m.taobao.com/h5?q=$1 302
 
 # tm: 天猫
 ^https:\/\/duckduckgo.com\/\?q=tm\+([^&]+).+ https://s.m.tmall.com/m/search.htm?q=$1 302
